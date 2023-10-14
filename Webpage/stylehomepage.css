@@ -1,0 +1,111 @@
+
+@import url(https://fonts.google.com/specimen/Hind+Guntur?query=Indian+Type+Foundry);
+* {
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+ }
+
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://th.bing.com/th/id/R.7edbb9e19be9a19ed3449d319288b86b?rik=bPHxBtlxUdTRyw&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2fcyber-network-internet-background-he.jpg&ehk=L0FBMpXRlOPBk13nibfMnRREVa5BZS9tifjVC40ynoE%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+ }
+
+
+ .navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 10px;
+
+ } 
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid t;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: 5s;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.wrapper {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background: transparent;
+    border: 2px solid rgba(red, green, blue, alpha);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+
+}
+
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
